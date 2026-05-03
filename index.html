@@ -7,8 +7,8 @@
 
 <!-- ============== SEO META ============== -->
 <title>Amasyalılar Oto Yedek Parça | Japon, Alman, Yerli Grup Yedek Parça | Küçükçekmece İstanbul</title>
-<meta name="description" content="1989'dan beri İstanbul Küçükçekmece'de hizmet veren Amasyalılar Oto Yedek Parça. Toyota, Honda, Mitsubishi, Hyundai, Renault, Fiat, BMW, Mercedes ve daha fazla marka için orijinal ve muadil yedek parça. Türkiye'nin her yerine kargo, hızlı temin, güvenli alışveriş.">
-<meta name="keywords" content="amasyalılar oto, oto yedek parça istanbul, küçükçekmece yedek parça, japon yedek parça, alman yedek parça, yerli yedek parça, toyota yedek parça, honda yedek parça, hyundai yedek parça, mitsubishi yedek parça, renault yedek parça, fiat yedek parça, bmw yedek parça, mercedes yedek parça, ikitelli yedek parça, oto yedek parça kargo">
+<meta name="description" content="1989'dan beri İstanbul Küçükçekmece'de hizmet veren Amasyalılar Oto Yedek Parça. Toyota, Honda, Mitsubishi, Hyundai, Renault, Fiat, BMW, Mercedes ve daha fazla marka için orijinal ve muadil yedek parça, sandık motor, komple motor satışı. Türkiye'nin her yerine kargo, hızlı temin, güvenli alışveriş.">
+<meta name="keywords" content="amasyalılar oto, oto yedek parça istanbul, sandık motor, komple motor, küçükçekmece yedek parça, japon yedek parça, alman yedek parça, yerli yedek parça, toyota yedek parça, honda yedek parça, hyundai yedek parça, mitsubishi yedek parça, renault yedek parça, fiat yedek parça, bmw yedek parça, mercedes yedek parça, ikitelli yedek parça, oto yedek parça kargo">
 <meta name="author" content="Amasyalılar Oto Yedek Parça">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.amasyalilaroto.com/">
@@ -25,14 +25,14 @@
 <meta property="og:description" content="Japon, Alman ve yerli grup araçlar için orijinal ve muadil yedek parça. Türkiye'nin her yerine kargo. Küçükçekmece, İstanbul.">
 <meta property="og:url" content="https://www.amasyalilaroto.com/">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://www.amasyalilaroto.com/images/amasyalilar3.webp">
+<meta property="og:image" content="https://www.amasyalilaroto.com/images/dukkan.webp">
 <meta property="og:site_name" content="Amasyalılar Oto Yedek Parça">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Amasyalılar Oto Yedek Parça | 1989'dan Beri">
 <meta name="twitter:description" content="Japon, Alman ve yerli grup yedek parça. Türkiye'nin her yerine kargo. Küçükçekmece İstanbul.">
-<meta name="twitter:image" content="https://www.amasyalilaroto.com/images/amasyalilar3.webp">
+<meta name="twitter:image" content="https://www.amasyalilaroto.com/images/dukkan.webp">
 
 <!-- Favicon -->
 <link rel="icon" type="image/webp" href="images/amasyalilarlogo.webp">
@@ -49,7 +49,7 @@
   "@context": "https://schema.org",
   "@type": "AutoPartsStore",
   "name": "Amasyalılar Oto Yedek Parça",
-  "image": "https://www.amasyalilaroto.com/images/amasyalilar3.webp",
+  "image": "https://www.amasyalilaroto.com/images/dukkan.webp",
   "logo": "https://www.amasyalilaroto.com/images/amasyalilarlogo.webp",
   "@id": "https://www.amasyalilaroto.com/",
   "url": "https://www.amasyalilaroto.com/",
@@ -57,7 +57,7 @@
   "priceRange": "₺₺",
   "foundingDate": "1989",
   "slogan": "Her Marka Araç Yedek Parça, Türkiye'nin Her Yerine Kargo",
-  "description": "1989'dan beri İstanbul Küçükçekmece'de hizmet veren Amasyalılar Oto Yedek Parça. Japon, Alman ve yerli grup araçlar için orijinal ve muadil yedek parça satışı.",
+  "description": "1989'dan beri İstanbul Küçükçekmece'de hizmet veren Amasyalılar Oto Yedek Parça. Japon, Alman ve yerli grup araçlar için orijinal ve muadil yedek parça, sandık motor ve komple motor satışı.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Atatürk Mah. İkitelli Cd. No:40/A",
@@ -83,6 +83,12 @@
       "dayOfWeek": "Saturday",
       "opens": "09:00",
       "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "13:30",
+      "closes": "19:00"
     }
   ],
   "sameAs": [
@@ -616,6 +622,57 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   to{opacity:1;transform:translateY(0)}
 }
 
+/* Hero photo card */
+.hero-card-photo{
+  padding:0;
+  background:#000;
+}
+.hero-photo{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform 1.4s var(--ease);
+}
+.hero-card-photo:hover .hero-photo{transform:scale(1.04)}
+.hero-photo-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, transparent 40%, rgba(0,0,0,.6) 100%);
+  pointer-events:none;
+}
+.hero-photo-badge{
+  position:absolute;
+  bottom:20px;left:20px;right:20px;
+  display:flex;align-items:center;gap:12px;
+  padding:14px 16px;
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-radius:var(--r-md);
+  box-shadow:var(--sh-md);
+}
+.hero-photo-badge img{
+  width:42px;height:42px;
+  border-radius:8px;
+  flex-shrink:0;
+}
+.hero-photo-badge strong{
+  display:block;
+  font-family:var(--f-display);
+  font-size:14px;font-weight:700;
+  letter-spacing:-.01em;
+  color:var(--text);
+  line-height:1.2;
+}
+.hero-photo-badge span{
+  display:block;
+  font-family:var(--f-mono);
+  font-size:10px;
+  letter-spacing:.1em;
+  color:var(--text-muted);
+  margin-top:2px;
+  text-transform:uppercase;
+}
+
 @media (max-width:960px){
   .hero-inner{grid-template-columns:1fr;gap:60px}
   .hero-visual{max-width:440px;margin:0 auto}
@@ -844,6 +901,27 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   background:var(--red);
   border-radius:50%;
 }
+.service-card-featured{
+  background:linear-gradient(180deg, #fff 0%, var(--red-soft) 100%);
+  border-color:var(--red);
+}
+.service-card-featured::before{
+  transform:scaleX(1);
+  height:4px;
+}
+.service-badge{
+  position:absolute;
+  top:14px;right:14px;
+  padding:5px 10px;
+  background:var(--red);
+  color:#fff;
+  font-family:var(--f-mono);
+  font-size:9px;
+  letter-spacing:.15em;
+  border-radius:100px;
+  text-transform:uppercase;
+  font-weight:600;
+}
 @media (max-width:900px){.services-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.services-grid{grid-template-columns:1fr}}
 
@@ -1027,8 +1105,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .gallery{background:var(--bg)}
 .gallery-grid{
   display:grid;
-  grid-template-columns:repeat(6,1fr);
-  grid-template-rows:repeat(2,260px);
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:230px;
   gap:14px;
 }
 .gallery-item{
@@ -1065,13 +1143,14 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   color:var(--red);margin-bottom:4px;
 }
 .gallery-item:hover .gallery-cap{transform:translateY(0);opacity:1}
-.gallery-1{grid-column:span 3;grid-row:span 2}
-.gallery-2{grid-column:span 3;grid-row:span 1}
-.gallery-3{grid-column:span 3;grid-row:span 1}
+.gallery-feat{grid-column:span 2;grid-row:span 2}
 @media (max-width:900px){
-  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(3,220px)}
-  .gallery-1{grid-column:span 2}
-  .gallery-2,.gallery-3{grid-column:span 1}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:220px}
+  .gallery-feat{grid-column:span 2;grid-row:span 2}
+}
+@media (max-width:560px){
+  .gallery-grid{grid-template-columns:1fr;grid-auto-rows:240px}
+  .gallery-feat{grid-column:span 1;grid-row:span 1}
 }
 
 /* WHY US */
@@ -1694,7 +1773,7 @@ textarea.form-control{
     <div class="topbar-inner">
       <span class="topbar-status">
         <span class="topbar-dot"></span>
-        Açık · Pzt-Cum 08:30 — 19:00
+        Haftanın 7 Günü Açık · Sandık Motor & Yedek Parça
       </span>
       <div class="topbar-right">
         <a href="tel:+902124725406">
@@ -1751,7 +1830,7 @@ textarea.form-control{
           Her Marka Araç İçin <span class="hero-title-accent">Yedek Parça</span>
         </h1>
         <p class="hero-sub">
-          <strong>1989'dan beri</strong> İstanbul Küçükçekmece'de hizmet veriyoruz. Japon, Alman ve yerli grup araçlarınız için orijinal ve A kalite muadil yedek parça temin ediyoruz. Şasi numarası ile birebir uyumlu ürün, hızlı kargo, üretici garantisi.
+          <strong>1989'dan beri</strong> İstanbul Küçükçekmece'de hizmet veriyoruz. <strong>Her marka araç</strong> için orijinal ve A kalite muadil yedek parça, <strong>sandık motor ve komple motor</strong> temin ediyoruz. Şasi numarası ile birebir uyumlu ürün, hızlı kargo, üretici garantisi.
         </p>
         <div class="hero-actions">
           <a href="https://wa.me/902124725406" class="btn btn-primary" target="_blank" rel="noopener">
@@ -1783,23 +1862,24 @@ textarea.form-control{
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-card">
-          <div class="hero-rings">
-            <div class="hero-ring hero-ring-1"></div>
-            <div class="hero-ring hero-ring-2"></div>
-            <div class="hero-ring hero-ring-3"></div>
-          </div>
-          <div class="hero-logo-wrap">
-            <img src="images/amasyalilarlogo.webp" alt="Amasyalılar Oto Logo">
+        <div class="hero-card hero-card-photo">
+          <img src="images/dukkan.webp" alt="Amasyalılar Oto Yedek Parça mağazamız" class="hero-photo">
+          <div class="hero-photo-overlay"></div>
+          <div class="hero-photo-badge">
+            <img src="images/amasyalilarlogo.webp" alt="">
+            <div>
+              <strong>Amasyalılar Oto</strong>
+              <span>Mağazamız · Küçükçekmece</span>
+            </div>
           </div>
         </div>
         <div class="hero-tag hero-tag-1">
           <span class="hero-tag-dot"></span>
-          Orijinal Parça
+          Sandık Motor
         </div>
         <div class="hero-tag hero-tag-2">
           <span class="hero-tag-dot"></span>
-          2 Yıl Garanti
+          Her Marka Araç
         </div>
         <div class="hero-tag hero-tag-3">
           <span class="hero-tag-dot"></span>
@@ -1859,7 +1939,7 @@ textarea.form-control{
   <div class="container">
     <div class="about-inner">
       <div class="about-image reveal">
-        <img src="images/amasyalilar3.webp" alt="Amasyalılar Oto Yedek Parça mağazası" loading="lazy">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.55.19.png" alt="Amasyalılar Oto Yedek Parça mağazası iç görünüm" loading="lazy">
         <div class="about-badge">
           <div class="about-badge-num">35+</div>
           <div class="about-badge-text">Yıllık Tecrübe</div>
@@ -1872,7 +1952,7 @@ textarea.form-control{
           Amasyalılar Oto Yedek Parça olarak <strong>1989 yılından bu yana</strong> İstanbul Küçükçekmece İkitelli'de aynı tutkuyla hizmet veriyoruz. Babadan oğula geçen birikim, otomotiv sektörünün her dönüşümünü yakından takip eden bir aile işletmesi olmamızı sağladı.
         </p>
         <p>
-          Japon grubu araçlarda Toyota, Honda, Mitsubishi'den; Alman grubunda BMW, Mercedes, Audi'ye; yerli grupta ise Renault, Fiat ve Tofaş başta olmak üzere <strong>onlarca markanın yedek parçasını</strong> stoklarımızda bulunduruyoruz. Bulamadığımız parçayı temin etmek de bizim işimiz.
+          Japon grubu araçlarda Toyota, Honda, Mitsubishi'den; Alman grubunda BMW, Mercedes, Audi'ye; yerli grupta ise Renault, Fiat ve Tofaş başta olmak üzere <strong>her marka aracın yedek parçasını</strong> temin ediyoruz. Bunun yanı sıra <strong>sandık motor ve komple motor</strong> satışı da yapıyoruz — bulamadığımız parçayı temin etmek bizim işimiz.
         </p>
         <p>
           Türkiye'nin <strong>81 iline kargo</strong> ile parça gönderiyor, anlaşmalı kargo firmalarıyla 1-3 iş günü içinde teslimat sağlıyoruz.
@@ -1915,8 +1995,20 @@ textarea.form-control{
       </p>
     </div>
     <div class="services-grid">
-      <article class="service-card reveal">
+      <article class="service-card service-card-featured reveal">
+        <div class="service-badge">ÖNE ÇIKAN</div>
         <div class="service-num">01</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z"/><path d="M7 8V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="12" y1="10" x2="12" y2="16"/></svg>
+        <h3>Sandık & Komple Motor</h3>
+        <p>Her marka araç için sandık motor ve komple motor satışı. Garantili, kontrollü, çalışır vaziyette teslim.</p>
+        <ul class="service-list">
+          <li>Sandık Motor Tüm Markalar</li>
+          <li>Komple Motor Satışı</li>
+          <li>Garantili Teslimat</li>
+        </ul>
+      </article>
+      <article class="service-card reveal reveal-d1">
+        <div class="service-num">02</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2v4a2 2 0 0 0 2 2h4M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8M14 2l6 6"/><circle cx="12" cy="14" r="3"/></svg>
         <h3>Motor Parçaları</h3>
         <p>Piston, segman, krank, eksantrik, supap, conta, yağ pompası ve tüm motor revizyon parçaları.</p>
@@ -1927,7 +2019,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal reveal-d1">
-        <div class="service-num">02</div>
+        <div class="service-num">03</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>
         <h3>Şanzıman & Aktarma</h3>
         <p>Manuel ve otomatik şanzıman parçaları, debriyaj, aks, şaft ve diferansiyel ürünleri.</p>
@@ -1938,7 +2030,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal reveal-d2">
-        <div class="service-num">03</div>
+        <div class="service-num">04</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
         <h3>Fren Sistemi</h3>
         <p>Fren balatası, disk, kampana, fren hortumu, ABS sensörü ve hidrolik sistem parçaları.</p>
@@ -1949,7 +2041,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal">
-        <div class="service-num">04</div>
+        <div class="service-num">05</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
         <h3>Süspansiyon & Direksiyon</h3>
         <p>Amortisör, helezon yay, salıncak, rotil, rot başı, direksiyon kutusu ve ilgili tüm parçalar.</p>
@@ -1960,7 +2052,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal reveal-d1">
-        <div class="service-num">05</div>
+        <div class="service-num">06</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="13 2 13 10 19 10 11 22 11 14 5 14 13 2"/></svg>
         <h3>Elektrik Aksamı</h3>
         <p>Marş motoru, alternatör, akü, sensörler, lambalar, sigorta ve elektrik kablo donanımları.</p>
@@ -1971,7 +2063,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal reveal-d2">
-        <div class="service-num">06</div>
+        <div class="service-num">07</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         <h3>Kaporta & Tampon</h3>
         <p>Çamurluk, kaput, tampon, far, stop lambası, kapı ve diğer dış aksam parçaları.</p>
@@ -1982,7 +2074,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal">
-        <div class="service-num">07</div>
+        <div class="service-num">08</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         <h3>İç Döşeme & Aksesuar</h3>
         <p>Direksiyon, şanzıman topuzu, vites körüğü, paspas, koltuk parçaları ve iç dekor ürünleri.</p>
@@ -1993,7 +2085,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal reveal-d1">
-        <div class="service-num">08</div>
+        <div class="service-num">09</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <h3>Filtre & Yağ</h3>
         <p>Yağ filtresi, hava filtresi, polen filtresi, yakıt filtresi ve motor yağları.</p>
@@ -2004,7 +2096,7 @@ textarea.form-control{
         </ul>
       </article>
       <article class="service-card reveal reveal-d2">
-        <div class="service-num">09</div>
+        <div class="service-num">10</div>
         <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <h3>Şasi Sorgulama</h3>
         <p>Şasi numaranızla aracınıza birebir uyumlu yedek parça tespiti ve teklif servisi.</p>
@@ -2147,25 +2239,60 @@ textarea.form-control{
       </p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item gallery-1 reveal">
-        <img src="images/amasyalilar3.webp" alt="Amasyalılar Oto mağaza dış görünüm" loading="lazy">
+      <div class="gallery-item gallery-feat reveal">
+        <img src="images/dukkan.webp" alt="Amasyalılar Oto Yedek Parça mağazamız - dış görünüm" loading="lazy">
         <div class="gallery-cap">
-          <span class="gallery-cap-num">01 / 03</span>
-          Mağazamız · Küçükçekmece
+          <span class="gallery-cap-num">01 / 08</span>
+          Mağazamız · Atatürk Mah. İkitelli
         </div>
       </div>
-      <div class="gallery-item gallery-2 reveal reveal-d1">
-        <img src="images/amasya1.webp" alt="Amasyalılar Oto iç mekan ve raflar" loading="lazy">
+      <div class="gallery-item reveal">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.55.19.png" alt="Amasyalılar Oto - Stok Alanı" loading="lazy">
         <div class="gallery-cap">
-          <span class="gallery-cap-num">02 / 03</span>
-          Stok Alanı
+          <span class="gallery-cap-num">02 / 08</span>
+          Stok Alanı · Sandık Motor & Yedek Parça
         </div>
       </div>
-      <div class="gallery-item gallery-3 reveal reveal-d2">
-        <img src="images/amasyalilar2.webp" alt="Amasyalılar Oto yedek parça stoğu" loading="lazy">
+      <div class="gallery-item reveal reveal-d1">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.55.26.png" alt="Amasyalılar Oto - Parça Çeşitliliği" loading="lazy">
         <div class="gallery-cap">
-          <span class="gallery-cap-num">03 / 03</span>
-          Parça Çeşitliliği
+          <span class="gallery-cap-num">03 / 08</span>
+          Parça Çeşitliliği · Her Marka Araç
+        </div>
+      </div>
+      <div class="gallery-item reveal reveal-d2">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.55.35.png" alt="Amasyalılar Oto - Yedek Parça Stoğu" loading="lazy">
+        <div class="gallery-cap">
+          <span class="gallery-cap-num">04 / 08</span>
+          Yedek Parça Stoğu · Orijinal & Muadil
+        </div>
+      </div>
+      <div class="gallery-item reveal reveal-d3">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.55.49.png" alt="Amasyalılar Oto - Motor Bölümü" loading="lazy">
+        <div class="gallery-cap">
+          <span class="gallery-cap-num">05 / 08</span>
+          Motor Bölümü · Sandık Motor
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.55.57.png" alt="Amasyalılar Oto - İç Mekan" loading="lazy">
+        <div class="gallery-cap">
+          <span class="gallery-cap-num">06 / 08</span>
+          İç Mekan · Düzenli Yerleşim
+        </div>
+      </div>
+      <div class="gallery-item reveal reveal-d1">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.56.04.png" alt="Amasyalılar Oto - Atölye" loading="lazy">
+        <div class="gallery-cap">
+          <span class="gallery-cap-num">07 / 08</span>
+          Atölye · Profesyonel Çalışma
+        </div>
+      </div>
+      <div class="gallery-item reveal reveal-d2">
+        <img src="images/Ekran%20Resmi%202026-05-04%2000.56.12.png" alt="Amasyalılar Oto - Stok Rafları" loading="lazy">
+        <div class="gallery-cap">
+          <span class="gallery-cap-num">08 / 08</span>
+          Stok Rafları · Geniş Yelpaze
         </div>
       </div>
     </div>
@@ -2466,7 +2593,7 @@ textarea.form-control{
           <ul class="contact-hours">
             <li><span>Pazartesi — Cuma</span><strong>08:30 — 19:00</strong></li>
             <li><span>Cumartesi</span><strong>09:00 — 18:00</strong></li>
-            <li class="closed"><span>Pazar</span><strong>Kapalı</strong></li>
+            <li><span>Pazar</span><strong>13:30 — 19:00</strong></li>
           </ul>
         </div>
       </div>
@@ -2522,7 +2649,7 @@ textarea.form-control{
       <div class="footer-brand">
         <img src="images/amasyalilarlogo.webp" alt="Amasyalılar Oto">
         <h3>Amasyalılar Oto</h3>
-        <p>1989'dan beri İstanbul Küçükçekmece'de Japon, Alman ve yerli grup araçlar için orijinal ve muadil yedek parça satışı.</p>
+        <p>1989'dan beri İstanbul Küçükçekmece'de her marka araç için yedek parça, sandık motor ve komple motor satışı. Türkiye geneli kargo.</p>
         <div class="footer-social">
           <a href="https://www.instagram.com/amasyaotoyedek34" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37a4 4 0 1 1-7.91 1.18A4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -2549,6 +2676,7 @@ textarea.form-control{
       <div class="footer-col">
         <h5>Hizmetler</h5>
         <ul>
+          <li><a href="#hizmetler">Sandık & Komple Motor</a></li>
           <li><a href="#hizmetler">Motor Parçaları</a></li>
           <li><a href="#hizmetler">Şanzıman & Aktarma</a></li>
           <li><a href="#hizmetler">Fren Sistemi</a></li>
@@ -2570,7 +2698,7 @@ textarea.form-control{
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Pzt-Cum 08:30-19:00, Cmt 09:00-18:00</span>
+            <span>Pzt-Cum 08:30-19:00 · Cmt 09:00-18:00 · Paz 13:30-19:00</span>
           </li>
         </ul>
       </div>
@@ -2720,7 +2848,7 @@ function submitContact(e) {
     `*Telefon:* ${tel}%0A` +
     `*Araç:* ${marka}${yil ? ' (' + yil + ')' : ''}%0A` +
     `*Aradığım Parça:*%0A${parca}`;
-  // 905XXXXXXXXX değiştirilecek — gerçek WhatsApp numarası
+  // 902124725406 değiştirilecek — gerçek WhatsApp numarası
   window.open(`https://wa.me/902124725406?text=${message}`, '_blank');
   return false;
 }
