@@ -1672,6 +1672,24 @@ textarea.form-control{
   color:rgba(255,255,255,.4);
 }
 .footer-bottom strong{color:var(--red)}
+.footer-credit{
+  display:inline-flex;align-items:center;gap:6px;
+  color:rgba(255,255,255,.4);
+}
+.w4m-link{
+  display:inline-flex;align-items:baseline;
+  font-family:var(--f-display);
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:-.02em;
+  transition:opacity .2s, transform .2s;
+}
+.w4m-link:hover{
+  opacity:.85;
+  transform:translateY(-1px);
+}
+.w4m-text{color:#fff}
+.w4m-num{color:#0088cc;font-weight:800}
 @media (max-width:900px){
   .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
 }
@@ -2705,7 +2723,13 @@ textarea.form-control{
     </div>
     <div class="footer-bottom">
       <span>© 2026 <strong>Amasyalılar Oto Yedek Parça</strong> · Tüm hakları saklıdır</span>
-      <span>Since 1989 · Küçükçekmece İstanbul</span>
+      <span class="footer-credit">
+        Bu site
+        <a href="https://www.web4medya.com/" target="_blank" rel="noopener" class="w4m-link">
+          <span class="w4m-text">Web</span><span class="w4m-num">4</span><span class="w4m-text">Medya</span>
+        </a>
+        tarafından özenle tasarlanmıştır.
+      </span>
     </div>
   </div>
 </footer>
